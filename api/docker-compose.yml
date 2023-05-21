@@ -1,0 +1,20 @@
+# Use root/example as user/password credentials
+version: '3.7'
+
+services:
+  
+  comservice:
+     image: comservice:v9
+     restart: always
+     ports:
+       - 587:587
+       - 80:80
+     networks:
+       - internal-container-network
+      
+   
+networks:
+  internal-container-network:
+    driver: bridge
+ 
+    
