@@ -4,7 +4,7 @@ version: '3.7'
 services:
   
   comservice:
-     image: comservice:v9
+     image: comservice:v91
      restart: always
      ports:
        - 587:587
